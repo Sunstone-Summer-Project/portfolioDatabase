@@ -12,7 +12,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: 'https://portfolio-frontend-rho-puce.vercel.app/'
 }));
 app.use(bodyParser.json()); 
 
