@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Database files
+*.mongodb
+*.db
+*.sqlite
+dump/
+
+# MongoDB
+/data/db
+/mongod.lock
+.mongorc.js
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Typescript
+*.tsbuildinfo
+
+# Miscellaneous
+.sass-cache/
+coverage/
