@@ -12,16 +12,9 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'https://portfolio-frontend-rho-puce.vercel.app', // No trailing slash
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'], // Allowed methods
-  allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-  credentials: true // If using cookies or other credentials
+  origin: 'https://portfolio-frontend-rho-puce.vercel.app'
 }));
-
 app.use(bodyParser.json()); 
-
-// Handle preflight requests
-app.options('*', cors()); // Handle all OPTIONS requests
 
 // Routes
 app.post('/register', async (req, res) => {
