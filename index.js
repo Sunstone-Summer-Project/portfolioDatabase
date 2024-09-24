@@ -12,8 +12,11 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'https://portfolio-frontend-rho-puce.vercel.app'
+  origin: 'https://portfolio-frontend-rho-puce.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
+
 app.use(bodyParser.json()); 
 
 // Routes
